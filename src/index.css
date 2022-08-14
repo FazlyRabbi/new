@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+.Card_image_div,
+.Card_image{
+
+border:15px solid transparent;
+background: linear-gradient(#228548,#228548,#A2E182,#A2E182,#228548);
+
+@apply shadow-sm;
+
+}
+.Card_image_main{
+  border: 8px solid transparent;
+  background: linear-gradient(#A2E182,#228548,#A2E182);
+}
+
+@media screen and (max-width:768px) {
+    .Card_image_div,.Card_image_main{
+        border: 6px solid transparent;
+    }
+}
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style table headers and table data */
+  /* th, td {
+    padding: 10px;
+    border: 2px solid #eee;
+  }  */
+  
+  .navbar{
+    background:url("./assets/svg/side.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: green;
+  }
+
+
+.navbar__right{
+    background:url("./assets/svg/sideRight.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: green;
+  }
+
